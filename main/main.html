@@ -1,0 +1,33 @@
+<!--
+    Reference:
+    http://langtonant.com/
+
+    CPSC335-Project-1               Team CPT
+    
+    File used to run/display program.
+-->
+
+<!DOCTYPE html>
+<title>CPSC335-Project-1</title>
+
+<body>
+<div>
+    <div id="displayAntBehavior"></div>
+    <div>	
+        <span class="step-count">Step Count:</span>
+        <span id="iterationCount"></span>
+    </div>
+    <div>
+        <canvas id="theGrid" style="background: #000000"></canvas>
+    </div>
+</div>
+
+<script src="../js/main.js"></script>
+
+<script>
+    var simulate = new AntGridFrame();
+
+    simulate.run();
+
+</script>
+</body>
